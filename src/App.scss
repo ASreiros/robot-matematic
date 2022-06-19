@@ -1,0 +1,88 @@
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+
+  h1{ 
+    font-size: 32px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;   
+  }
+}
+
+.mainscreen{
+  min-height: 85vh;
+  width: 100%;
+  font-size: 16px;
+
+  label{
+    margin-right: 10px;
+  }
+
+  input{
+    width: 50px;
+  }
+
+  .roboscreen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 50vh;
+    border: 1px black dotted;
+    margin: 20px auto;
+
+    .botscreen{
+      width: 60%;
+      
+
+        .bot{
+          width: 200px;
+          height:200px;
+          object-fit: contain;
+        }
+    }
+
+    .mainrobot{
+      width: 30%;
+      min-height: 50vh;
+      object-fit: contain;
+      border-left: 1px black dotted;
+    }
+  }
+
+  .controlpanel{
+    width: 100%;
+    min-height: 10vh; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+      button{
+        background-color: green;
+        width: 200px;
+        height: 70px;
+        border: none;
+        border-radius: 10%;
+        font-size: 32px;
+        color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;   
+      }
+  }
+}
+
+
+
+
